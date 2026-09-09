@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TTM Validation Report - M4NFA0D6D</title>
+<style>
+body{font-family:Arial,sans-serif;margin:24px;color:#222;}
+h1{font-size:20px;} h2{font-size:16px;margin-top:32px;}
+.summary{margin-bottom:16px;}
+.summary span{display:inline-block;padding:4px 10px;border-radius:4px;margin-right:8px;font-weight:bold;}
+.pass-badge{background:#d4edda;color:#155724;}
+.fail-badge{background:#f8d7da;color:#721c24;}
+.na-badge{background:#e2e3e5;color:#383d41;}
+table{border-collapse:collapse;width:100%;margin-bottom:24px;}
+th,td{border:1px solid #ccc;padding:6px 8px;text-align:left;vertical-align:top;font-size:13px;}
+th{background:#f2f2f2;}
+td.wrap{max-width:360px;white-space:pre-wrap;word-break:break-word;}
+tr.fail{background:#fdecea;}
+tr.na{background:#f5f5f5;}
+</style>
+</head>
+<body>
+<h1>TTM Command Validation Report</h1>
+<div class="summary">Environment: <b>prod</b> | Bot: <b>M4NFA0D6D</b> | Generated: <b>2026-09-09 18:12:08.767</b><br><br><span class="pass-badge">Passed: 19</span><span class="fail-badge">Failed: 6</span><span class="na-badge">N/A: 0</span><span>Total: 25</span></div>
+<h2>Basic command - mini</h2>
+<table>
+<tr><th>Question</th><th>Expected Output</th><th>Actual Output</th><th>Result</th><th>Failure Reason</th></tr>
+<tr class=""><td class="wrap">Can you play wheels on the bus</td><td class="wrap">Enjoy listening to the wheels on the bus rhyme</td><td class="wrap">Ans--&gt;Playing the wheels on the bus rhyme now</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play five little monkeys</td><td class="wrap">Playing the five little monkeys rhyme now</td><td class="wrap">Ans--&gt;Playing the five little monkeys rhyme now</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play twinkle twinkle little star</td><td class="wrap">Enjoy listening to the twinkle twinkle little star rhyme</td><td class="wrap">Ans--&gt;Currently playing the twinkle twinkle little star rhyme for you</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play baby shark</td><td class="wrap">Enjoy listening to the baby shark rhyme</td><td class="wrap">Ans--&gt;Currently playing the baby shark rhyme for you</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class="fail"><td class="wrap">Can you play mary had little lamb</td><td class="wrap">Currently playing the mary had little lamb rhyme for you</td><td class="wrap">Ans--&gt;I need to develop good taste in rhymes like you. 
+Ans--&gt;Until then, you can ask me to play Wheels on the bus rhyme. </td><td>FAIL</td><td class="wrap">Expected vs Actual mismatch</td></tr>
+<tr class="fail"><td class="wrap">Can you play muffin man</td><td class="wrap">Currently playing the muffin man rhyme for you</td><td class="wrap">Ans--&gt;I need to develop good taste in rhymes like you. 
+Ans--&gt;Until then, you can ask me to play Baby shark rhyme. </td><td>FAIL</td><td class="wrap">Expected vs Actual mismatch</td></tr>
+<tr class=""><td class="wrap">Can you play itsy bitsy spider</td><td class="wrap">Playing the itsy bitsy spider rhyme now</td><td class="wrap">Ans--&gt;Playing the itsy bitsy spider rhyme now</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play bingo dog</td><td class="wrap">Currently playing the bingo dog rhyme for you</td><td class="wrap">Ans--&gt;Currently playing the bingo dog rhyme for you</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play three little kittens</td><td class="wrap">Currently playing the three little kittens rhyme for you</td><td class="wrap">Ans--&gt;Enjoy listening to the three little kittens rhyme</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play head shoulder knees and toes nursery</td><td class="wrap">Currently playing the head shoulder knees and toes nursery rhyme for you</td><td class="wrap">Ans--&gt;Playing the head shoulder knees and toes nursery rhyme now</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play bath nursery</td><td class="wrap">Currently playing the bath nursery rhyme for you</td><td class="wrap">Ans--&gt;Currently playing the bath nursery rhyme for you</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class="fail"><td class="wrap">Can you play rainbow nursery</td><td class="wrap">Currently playing the rainbow nursery rhyme for you</td><td class="wrap">Ans--&gt;Hey, Here’s a fun idea!
+Ans--&gt;When in doubt, just dance! Do you want to try Happy Holidays Song on Dance Master?</td><td>FAIL</td><td class="wrap">Expected vs Actual mismatch</td></tr>
+<tr class=""><td class="wrap">Can you play daddy finger nursery</td><td class="wrap">Currently playing the daddy finger nursery rhyme for you</td><td class="wrap">Ans--&gt;Enjoy listening to the daddy finger nursery rhyme</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play number nursery</td><td class="wrap">Playing the number nursery rhyme now</td><td class="wrap">Ans--&gt;Playing the number nursery rhyme now</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class="fail"><td class="wrap">Can you play phonic</td><td class="wrap">Playing the phonic rhyme now</td><td class="wrap">Ans--&gt;I know a story about Jenna who receives a special bundle from a stork! Want to hear what happens next?</td><td>FAIL</td><td class="wrap">Expected vs Actual mismatch</td></tr>
+<tr class="fail"><td class="wrap">Can you play month of year nursery</td><td class="wrap">Playing the month of year nursery rhyme now</td><td class="wrap">Ans--&gt;I need to develop good taste in rhymes like you. 
+Ans--&gt;Until then, you can ask me to play Five little monkeys rhyme. </td><td>FAIL</td><td class="wrap">Expected vs Actual mismatch</td></tr>
+<tr class="fail"><td class="wrap">Can you play this is way nursery</td><td class="wrap">Currently Playing  this is way nursery rhyme now</td><td class="wrap">Ans--&gt;I need to develop good taste in rhymes like you. 
+Ans--&gt;Until then, you can ask me to play Five little monkeys rhyme. </td><td>FAIL</td><td class="wrap">Expected vs Actual mismatch</td></tr>
+<tr class=""><td class="wrap">Can you play bonnie nursery</td><td class="wrap">Currently playing the bonnie nursery rhyme for you</td><td class="wrap">Ans--&gt;Currently playing the bonnie nursery rhyme for you</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play hush little baby nursery</td><td class="wrap">Playing the hush little baby nursery rhyme now</td><td class="wrap">Ans--&gt;Enjoy listening to the hush little baby nursery rhyme</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play mary mary quite contrary nursery</td><td class="wrap">Currently playing the mary mary quite contrary nursery rhyme for you</td><td class="wrap">Ans--&gt;Enjoy listening to the mary mary quite contrary nursery rhyme</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play animal nursery</td><td class="wrap">Enjoy listening to the animal nursery rhyme</td><td class="wrap">Ans--&gt;Currently playing the animal nursery rhyme for you</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play time to go to bed nursery</td><td class="wrap">Currently playing the time to go to bed nursery rhyme for you</td><td class="wrap">Ans--&gt;Currently playing the time to go to bed nursery rhyme for you</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play unicorn</td><td class="wrap">Playing the unicorn rhyme now</td><td class="wrap">Ans--&gt;Enjoy listening to the unicorn rhyme</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play alphabet song</td><td class="wrap">Currently playing the alphabet song rhyme for you</td><td class="wrap">Ans--&gt;Enjoy listening to the alphabet song rhyme</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Finger family colors rhymes</td><td class="wrap">Playing the finger family rhyme now</td><td class="wrap">Ans--&gt;Currently playing the finger family rhyme for you</td><td>PASS</td><td class="wrap"></td></tr>
+</table>
+</body>
+</html>
