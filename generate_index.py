@@ -1,4 +1,5 @@
 import os
+from urllib.parse import quote
 
 
 def generate_index():
@@ -24,7 +25,8 @@ def generate_index():
         else:
             label = f"Open log ({file})"
 
-        list_items += f'        <li><a href="{file}">{label}</a></li>\n'
+        encoded_path = quote(file)
+        list_items += f'        <li><a href="{encoded_path}">{label}</a></li>\n'
 
     html_content = f"""<!doctype html>
 <html lang="en">
