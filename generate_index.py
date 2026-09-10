@@ -1,29 +1,31 @@
 import os
-import glob
+
 
 def generate_index():
-    # Find all html and pdf reports, and logs
     files = []
-    files.extend(glob.glob("AutomationReport_*.html"))
-    files.extend(glob.glob("AutomationReport_*.pdf"))
-    files.extend(glob.glob("ExecutionLog_*.log"))
-    
-    # Sort files so newest are generally grouped
-    files.sort(reverse=True)
-    
-    # Generate the list items
+    for entry in os.listdir('.'):
+        if not os.path.isfile(entry):
+            continue
+        if entry.startswith('.') or entry.lower() == 'index.html':
+            continue
+        lower = entry.lower()
+        if lower.endswith('.html') or lower.endswith('.xlsx') or lower.endswith('.log'):
+            files.append(entry)
+
+    files = sorted(files, reverse=True)
+
     list_items = ""
     for file in files:
-        if file.endswith(".html"):
-            label = f"View HTML report ({file})"
-        elif file.endswith(".pdf"):
-            label = f"Download PDF report ({file})"
+        lower = file.lower()
+        if lower.endswith('.html'):
+            label = f"Open report ({file})"
+        elif lower.endswith('.xlsx'):
+            label = f"Download workbook ({file})"
         else:
-            label = f"View execution log ({file})"
-            
+            label = f"Open log ({file})"
+
         list_items += f'        <li><a href="{file}">{label}</a></li>\n'
 
-    # The HTML template
     html_content = f"""<!doctype html>
 <html lang="en">
   <head>
@@ -81,8 +83,9 @@ def generate_index():
 
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(html_content)
-        
-    print("index.html has been successfully generated with all current reports!")
+
+    print(f"index.html regenerated with {len(files)} files.")
+
 
 if __name__ == "__main__":
     generate_index()
