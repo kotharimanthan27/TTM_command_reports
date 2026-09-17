@@ -1,0 +1,19 @@
+﻿# Python cache
+__pycache__/
+*.py[cod]
+*.class
+
+# Environments
+.venv/
+venv/
+ENV/
+
+# IDE / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Agent state
+.kilo/
+.kilocode/
