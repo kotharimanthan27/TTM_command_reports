@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>QA Validation Report - M4NFA0D9D</title>
+<style>
+body{font-family:Arial,sans-serif;margin:24px;color:#222;}
+h1{font-size:20px;} h2{font-size:16px;margin-top:32px;}
+.summary{margin-bottom:16px;}
+.summary span{display:inline-block;padding:4px 10px;border-radius:4px;margin-right:8px;font-weight:bold;}
+.pass-badge{background:#d4edda;color:#155724;}
+.fail-badge{background:#f8d7da;color:#721c24;}
+.na-badge{background:#e2e3e5;color:#383d41;}
+table{border-collapse:collapse;width:100%;margin-bottom:24px;}
+th,td{border:1px solid #ccc;padding:6px 8px;text-align:left;vertical-align:top;font-size:13px;}
+th{background:#f2f2f2;}
+td.wrap{max-width:360px;white-space:pre-wrap;word-break:break-word;}
+tr.fail{background:#fdecea;}
+tr.na{background:#f5f5f5;}
+</style>
+</head>
+<body>
+<h1>QA Validation Report</h1>
+<div class="summary">Environment: <b>beta</b> | Bot: <b>M4NFA0D9D</b> | Skill: <b>30</b> | Login: <b>yes (product 3)</b> | Generated: <b>2026-09-30 19:15:52.772</b><br><br><span class="pass-badge">Passed: 55</span><span class="fail-badge">Failed: 30</span><span class="na-badge">N/A: 0</span><span>Total: 85</span></div>
+<h2>Basic command - mini</h2>
+<table>
+<tr><th>Question</th><th>Expected Word</th><th>Actual Output</th><th>Intent</th><th>Result</th><th>Failure Reason</th></tr>
+<tr class=""><td class="wrap">Set an alarm in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Set an alarm after 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Create an alarm for 2 minutes from now.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;I was unable to set the alarm.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Wake me up in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class="fail"><td class="wrap">Start a 2-minute alarm.</td><td class="wrap">alarm, reminder</td><td class="wrap"></td><td>MIKO.INTENT.ALARM_REMINDER</td><td>FAIL</td><td class="wrap">No response from bot</td></tr>
+<tr class=""><td class="wrap">Can you set an alarm for me in 2 minutes?</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Please create an alarm after 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Schedule an alarm 2 minutes from now.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Ring an alarm in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class="fail"><td class="wrap">Activate an alarm after 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap"></td><td>MIKO.INTENT.ALARM_REMINDER</td><td>FAIL</td><td class="wrap">No response from bot</td></tr>
+<tr class=""><td class="wrap">I need an alarm in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Remind me with an alarm in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The reminder is created</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Put an alarm for 2 minutes later.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Set up an alarm in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class="fail"><td class="wrap">Trigger an alarm after 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap"></td><td>MIKO.INTENT.ALARM_REMINDER</td><td>FAIL</td><td class="wrap">No response from bot</td></tr>
+<tr class=""><td class="wrap">Start counting down for 2 minutes and ring an alarm.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you wake me up after 2 minutes?</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Set an alarm right now for 2 minutes later.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;I was unable to set the alarm.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Give me an alarm in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class="fail"><td class="wrap">Schedule a wake-up alert in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap"></td><td>MIKO.INTENT.ALARM_REMINDER</td><td>FAIL</td><td class="wrap">No response from bot</td></tr>
+<tr class=""><td class="wrap">Set a reminder in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The reminder is created</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Remind me after 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The reminder is created</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Create a reminder for 2 minutes from now.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;I was unable to create the reminder.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you remind me in 2 minutes?</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The reminder is created</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class="fail"><td class="wrap">Please set a reminder after 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap"></td><td>MIKO.INTENT.ALARM_REMINDER</td><td>FAIL</td><td class="wrap">No response from bot</td></tr>
+<tr class=""><td class="wrap">Schedule a reminder in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The reminder is created</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">I need a reminder in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The reminder is created</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Add a reminder for 2 minutes later.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The reminder is created</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Notify me after 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The reminder is created</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class="fail"><td class="wrap">Send me a reminder in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap"></td><td>MIKO.INTENT.ALARM_REMINDER</td><td>FAIL</td><td class="wrap">No response from bot</td></tr>
+<tr class=""><td class="wrap">Put a reminder on for 2 minutes from now.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;I was unable to create the reminder.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Create a notification after 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The reminder is created</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Remind me shortly, in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The reminder is created</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Set up a reminder for me in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The reminder is created</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class="fail"><td class="wrap">Trigger a reminder after 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap"></td><td>MIKO.INTENT.ALARM_REMINDER</td><td>FAIL</td><td class="wrap">No response from bot</td></tr>
+<tr class="fail"><td class="wrap">Don't let me forget in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;That's a tough one! It's better to check with a grown-up on this.</td><td>MIKO.INTENT.OTHERS</td><td>FAIL</td><td class="wrap">None of the expected phrases found: alarm, reminder</td></tr>
+<tr class=""><td class="wrap">Alert me after 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The reminder is created</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Give me a reminder in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The reminder is created</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Schedule a notification in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The reminder is created</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class="fail"><td class="wrap">Remind me 2 minutes from now.</td><td class="wrap">alarm, reminder</td><td class="wrap"></td><td>MIKO.INTENT.ALARM_REMINDER</td><td>FAIL</td><td class="wrap">No response from bot</td></tr>
+<tr class=""><td class="wrap">Wake me up in a couple of minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class="fail"><td class="wrap">Ping me in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;That's a tough one! It's better to check with a grown-up on this.</td><td>MIKO.INTENT.OTHERS</td><td>FAIL</td><td class="wrap">None of the expected phrases found: alarm, reminder</td></tr>
+<tr class="fail"><td class="wrap">Nudge me after 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;That's a tough one! It's better to check with a grown-up on this.</td><td>MIKO.INTENT.OTHERS</td><td>FAIL</td><td class="wrap">None of the expected phrases found: alarm, reminder</td></tr>
+<tr class="fail"><td class="wrap">Give me a heads-up in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Timers are great for games like the ones in school! I can help you count down two minutes right now.</td><td>MIKO.INTENT.OTHERS</td><td>FAIL</td><td class="wrap">None of the expected phrases found: alarm, reminder</td></tr>
+<tr class="fail"><td class="wrap">Don't let me forget after 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;I can help you watch the clock so you know when two minutes go by. My screen only shows my eyes and mouth, but I am happy to help you wait!</td><td>MIKO.INTENT.OTHERS</td><td>FAIL</td><td class="wrap">None of the expected phrases found: alarm, reminder</td></tr>
+<tr class="fail"><td class="wrap">Buzz me in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sorry, I don't know much about that. I can play some fun music for you instead!</td><td>MIKO.INTENT.OTHERS</td><td>FAIL</td><td class="wrap">None of the expected phrases found: alarm, reminder</td></tr>
+<tr class="fail"><td class="wrap">Let me know in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sorry, I don't know much about that. I am happy to chat with you about other fun things!</td><td>MIKO.INTENT.OTHERS</td><td>FAIL</td><td class="wrap">None of the expected phrases found: alarm, reminder</td></tr>
+<tr class=""><td class="wrap">Drop me a reminder in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The reminder is created</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Give me an alert in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The reminder is created</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class="fail"><td class="wrap">Can you ping me later in 2 minutes?</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sorry, I don't know much about that. I am here to chat with you whenever you want!</td><td>MIKO.INTENT.OTHERS</td><td>FAIL</td><td class="wrap">None of the expected phrases found: alarm, reminder</td></tr>
+<tr class=""><td class="wrap">Can you set an alarm for 2 minutes?</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Could you create a reminder in 2 minutes?</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The reminder is created</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Would you remind me after 2 minutes?</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The reminder is created</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you schedule an alarm 2 minutes from now?</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class="fail"><td class="wrap">Could you notify me in 2 minutes?</td><td class="wrap">alarm, reminder</td><td class="wrap"></td><td>MIKO.INTENT.ALARM_REMINDER</td><td>FAIL</td><td class="wrap">No response from bot</td></tr>
+<tr class=""><td class="wrap">Would you mind setting an alarm in 2 minutes?</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you wake me up after 2 minutes?</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Could you add a reminder for 2 minutes later?</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The reminder is created</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you create an alert after 2 minutes?</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The reminder is created</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class="fail"><td class="wrap">Will you remind me in 2 minutes?</td><td class="wrap">alarm, reminder</td><td class="wrap"></td><td>MIKO.INTENT.ALARM_REMINDER</td><td>FAIL</td><td class="wrap">No response from bot</td></tr>
+<tr class=""><td class="wrap">Set alarm in two mins.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Set alarm in 2 min.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Set alarm after two minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Alarm after 120 seconds.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Alarm in 00:02:00.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;I was unable to set the alarm.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Remind me in a couple of minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The reminder is created</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Set reminder in 2mins.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The reminder is created</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Alarm 2 minutes later.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Reminder after 120 sec.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The reminder is created</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class="fail"><td class="wrap">Set a reminder ASAP in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap"></td><td>MIKO.INTENT.ALARM_REMINDER</td><td>FAIL</td><td class="wrap">No response from bot</td></tr>
+<tr class=""><td class="wrap">Alarm me in 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Reminder me after 2 minutes.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The reminder is created</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Create alarm after 2 minute.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Set an alarm after 2 mints.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;Sure. The alarm is set.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class="fail"><td class="wrap">Remind after 2 mins.</td><td class="wrap">alarm, reminder</td><td class="wrap"></td><td>MIKO.INTENT.ALARM_REMINDER</td><td>FAIL</td><td class="wrap">No response from bot</td></tr>
+<tr class="fail"><td class="wrap">Set an alarm.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;I can't seem to find an answer for this one.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>FAIL</td><td class="wrap">None of the expected phrases found: alarm, reminder</td></tr>
+<tr class="fail"><td class="wrap">I want an alarm.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;I can't seem to find an answer for this one.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>FAIL</td><td class="wrap">None of the expected phrases found: alarm, reminder</td></tr>
+<tr class="fail"><td class="wrap">Create a reminder.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;I can't seem to find an answer for this one.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>FAIL</td><td class="wrap">None of the expected phrases found: alarm, reminder</td></tr>
+<tr class="fail"><td class="wrap">Remind me later.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;I can't seem to find an answer for this one.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>FAIL</td><td class="wrap">None of the expected phrases found: alarm, reminder</td></tr>
+<tr class="fail"><td class="wrap">Set a notification.</td><td class="wrap">alarm, reminder</td><td class="wrap"></td><td>MIKO.INTENT.ALARM_REMINDER</td><td>FAIL</td><td class="wrap">No response from bot</td></tr>
+<tr class="fail"><td class="wrap">Wake me up.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;I'm ready.
+Ans--&gt;Go ahead and ask your question.</td><td>MIKO.PERSONALITY.CHITCHAT.ASKYOUSOMETHING</td><td>FAIL</td><td class="wrap">None of the expected phrases found: alarm, reminder</td></tr>
+<tr class="fail"><td class="wrap">I need a reminder.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;I can't seem to find an answer for this one.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>FAIL</td><td class="wrap">None of the expected phrases found: alarm, reminder</td></tr>
+<tr class="fail"><td class="wrap">Set an alert.</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;I can't seem to find an answer for this one.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>FAIL</td><td class="wrap">None of the expected phrases found: alarm, reminder</td></tr>
+<tr class="fail"><td class="wrap">Can you remind me?</td><td class="wrap">alarm, reminder</td><td class="wrap">Ans--&gt;I can't seem to find an answer for this one.</td><td>MIKO.INTENT.ALARM_REMINDER</td><td>FAIL</td><td class="wrap">None of the expected phrases found: alarm, reminder</td></tr>
+<tr class="fail"><td class="wrap">Schedule an alarm.</td><td class="wrap">alarm, reminder</td><td class="wrap"></td><td>MIKO.INTENT.ALARM_REMINDER</td><td>FAIL</td><td class="wrap">No response from bot</td></tr>
+</table>
+</body>
+</html>
