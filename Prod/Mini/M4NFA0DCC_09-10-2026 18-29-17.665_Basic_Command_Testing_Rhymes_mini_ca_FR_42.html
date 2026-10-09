@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>QA Validation Report - M4NFA0DCC</title>
+<style>
+body{font-family:Arial,sans-serif;margin:24px;color:#222;}
+h1{font-size:20px;} h2{font-size:16px;margin-top:32px;}
+.summary{margin-bottom:16px;}
+.summary span{display:inline-block;padding:4px 10px;border-radius:4px;margin-right:8px;font-weight:bold;}
+.pass-badge{background:#d4edda;color:#155724;}
+.fail-badge{background:#f8d7da;color:#721c24;}
+.na-badge{background:#e2e3e5;color:#383d41;}
+table{border-collapse:collapse;width:100%;margin-bottom:24px;}
+th,td{border:1px solid #ccc;padding:6px 8px;text-align:left;vertical-align:top;font-size:13px;}
+th{background:#f2f2f2;}
+td.wrap{max-width:360px;white-space:pre-wrap;word-break:break-word;}
+tr.fail{background:#fdecea;}
+tr.na{background:#f5f5f5;}
+</style>
+</head>
+<body>
+<h1>QA Validation Report</h1>
+<div class="summary">Environment: <b>beta</b> | Bot: <b>M4NFA0DCC</b> | Skill: <b>42</b> | Login: <b>yes (product 3)</b> | Generated: <b>2026-10-09 18:29:17.713</b><br><br><span class="pass-badge">Passed: 7</span><span class="fail-badge">Failed: 0</span><span class="na-badge">N/A: 0</span><span>Total: 7</span></div>
+<h2>Basic command - mini</h2>
+<table>
+<tr><th>Question</th><th>Expected Word</th><th>Actual Output</th><th>Actual Output (English)</th><th>Intent</th><th>Result</th><th>Failure Reason</th></tr>
+<tr class=""><td class="wrap">Écoutez la comptine Le chien Bingo</td><td class="wrap">Profitez d'écouter la rime Le chien Bingo</td><td class="wrap">Ans--&gt;Profitez d'écouter la rime Le chien Bingo</td><td class="wrap">Enjoy listening to The Bingo Dog rhyme</td><td>MIKO.INTENT.RHYMES</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Écoutez la comptine L'araignée Itsy bitsy</td><td class="wrap">Profitez d'écouter la rime L'araignée Itsy bitsy</td><td class="wrap">Ans--&gt;Profitez d'écouter la rime L'araignée Itsy bitsy</td><td class="wrap">Enjoy listening to itsy bitsy spider rhyme</td><td>MIKO.INTENT.RHYMES</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Écoutez la comptine Le vieux MacDonald a une ferme</td><td class="wrap">Profitez d'écouter la rime Le vieux MacDonald a une ferme</td><td class="wrap">Ans--&gt;Profitez d'écouter la rime Le vieux MacDonald a une ferme</td><td class="wrap">Enjoy listening to the rhyme Old MacDonald has a farm</td><td>MIKO.INTENT.RHYMES</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Écoutez la comptine Un, deux, trois, quatre, cinq</td><td class="wrap">Profitez d'écouter la rime Un deux trois quatre cinq</td><td class="wrap">Ans--&gt;Profitez d'écouter la rime Un, deux, trois, quatre, cinq</td><td class="wrap">Enjoy listening to the rhyme One, two, three, four, five</td><td>MIKO.INTENT.RHYMES</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Écoutez la comptine Pikabou</td><td class="wrap">Profitez d'écouter la rime Pikabou</td><td class="wrap">Ans--&gt;Profitez d'écouter la rime Pikabou</td><td class="wrap">Enjoy listening to the Pikabou rhyme</td><td>MIKO.INTENT.RHYMES</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Écoutez la comptine Pluie, pluie, va faire un tour</td><td class="wrap">Profitez d'écouter la rime Pluie pluie va faire un tour</td><td class="wrap">Ans--&gt;Profitez d'écouter la rime Pluie, pluie, va faire un tour</td><td class="wrap">Enjoy listening to the rhyme Rain, rain, go for a ride</td><td>MIKO.INTENT.RHYMES</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Écoutez la comptine Le mûrier</td><td class="wrap">Profitez d'écouter la rime Le mûrier</td><td class="wrap">Ans--&gt;Profitez d'écouter la rime Le mûrier</td><td class="wrap">Enjoy listening to The Mulberry Rhyme</td><td>MIKO.INTENT.RHYMES</td><td>PASS</td><td class="wrap"></td></tr>
+</table>
+</body>
+</html>
