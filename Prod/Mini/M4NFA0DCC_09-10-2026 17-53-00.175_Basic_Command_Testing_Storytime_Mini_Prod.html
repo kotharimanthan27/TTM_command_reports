@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>QA Validation Report - M4NFA0DCC</title>
+<style>
+body{font-family:Arial,sans-serif;margin:24px;color:#222;}
+h1{font-size:20px;} h2{font-size:16px;margin-top:32px;}
+.summary{margin-bottom:16px;}
+.summary span{display:inline-block;padding:4px 10px;border-radius:4px;margin-right:8px;font-weight:bold;}
+.pass-badge{background:#d4edda;color:#155724;}
+.fail-badge{background:#f8d7da;color:#721c24;}
+.na-badge{background:#e2e3e5;color:#383d41;}
+table{border-collapse:collapse;width:100%;margin-bottom:24px;}
+th,td{border:1px solid #ccc;padding:6px 8px;text-align:left;vertical-align:top;font-size:13px;}
+th{background:#f2f2f2;}
+td.wrap{max-width:360px;white-space:pre-wrap;word-break:break-word;}
+tr.fail{background:#fdecea;}
+tr.na{background:#f5f5f5;}
+</style>
+</head>
+<body>
+<h1>QA Validation Report</h1>
+<div class="summary">Environment: <b>prod</b> | Bot: <b>M4NFA0DCC</b> | Skill: <b>30</b> | Login: <b>yes (product 3)</b> | Generated: <b>2026-10-09 17:53:00.499</b><br><br><span class="pass-badge">Passed: 143</span><span class="fail-badge">Failed: 3</span><span class="na-badge">N/A: 0</span><span>Total: 146</span></div>
+<h2>Basic command - mini</h2>
+<table>
+<tr><th>Question</th><th>Expected Word</th><th>Actual Output</th><th>Intent</th><th>Result</th><th>Failure Reason</th></tr>
+<tr class=""><td class="wrap">Can you tell me a story </td><td class="wrap">Sure, got it</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Welcome to the fantastic world of stories,
+Ans--&gt;I think you might like Little Stories for Tiny People: Anytime and bedtime stories for kids
+Ans--&gt;Do you want to hear it?</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Tell me a story</td><td class="wrap">Sure, got it</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Welcome to the fantastic world of stories,
+Ans--&gt;I think you might like Lively Lewis Stories
+Ans--&gt;Do you want to hear it?</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Mickeys Birthday story</td><td class="wrap">Mickeys, Birthday</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Mickeys Birthday from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play The Incredibles story</td><td class="wrap">The, Incredibles</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear The Incredibles from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Dumbo the flying elephant story</td><td class="wrap">Dumbo the flying elephant</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Dumbo the flying elephant from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Alice in Wonderland story</td><td class="wrap">Alice in Wonderland</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Alice in Wonderland from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play The Jungle Book story</td><td class="wrap">The Jungle Book</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear The Jungle Book from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Bambi story</td><td class="wrap">Bambi</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Welcome to the fantastic world of stories,
+Ans--&gt;Let's hear Bambi from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play The lion king story</td><td class="wrap">The lion king</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Welcome to the fantastic world of stories,
+Ans--&gt;Let's hear The lion king from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play 101 Dalmatians story</td><td class="wrap">101 Dalmatians</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Welcome to the fantastic world of stories,
+Ans--&gt;Let's hear 101 Dalmatians from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Crystal Cave story</td><td class="wrap">Crystal Cave</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Welcome to the fantastic world of stories,
+Ans--&gt;Let's hear Crystal Cave from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Dino Past story</td><td class="wrap">Dino Past</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Dino Past from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Summer is Here! story</td><td class="wrap">Summer is Here!</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Summer is Here! from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play I Love Mardi Gras story</td><td class="wrap">I Love Mardi Gras</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear I Love Mardi Gras from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play My Toothbrush story</td><td class="wrap">My Toothbrush</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear My Toothbrush from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Taste of the Moon story</td><td class="wrap">Taste of the Moon</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Taste of the Moon from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Anna's Bedtime story</td><td class="wrap">Anna's Bedtime</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Anna's Bedtime from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Emma's Dreams story</td><td class="wrap">Emma's Dreams</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Emma's Dreams from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Underground Quest story</td><td class="wrap">Underground Quest</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Underground Quest from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Rex's Might story</td><td class="wrap">Rex's Might</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Rex's Might from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Dino Differences story</td><td class="wrap">Dino Differences</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Dino Differences from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Santa's Journey story</td><td class="wrap">Santa's Journey</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Santa's Journey from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Rudolph's Hello story</td><td class="wrap">Rudolph's Hello</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Rudolph's Hello from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Lost Christmas Tree story</td><td class="wrap">Lost Christmas Tree</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Lost Christmas Tree from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Pajama Eyes story</td><td class="wrap">Pajama Eyes</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Pajama Eyes from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Magic Box story</td><td class="wrap">Magic Box</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Magic Box from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play The Doubtful Circle story</td><td class="wrap">The Doubtful Circle</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear The Doubtful Circle from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Rex Race story</td><td class="wrap">Rex Race</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Rex Race from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play A Musical Adventure story</td><td class="wrap">A Musical Adventure</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear A Musical Adventure from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Body Protection story</td><td class="wrap">Body Protection</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Body Protection from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Mole the Rat story</td><td class="wrap">Mole the Rat</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Mole the Rat from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play A World of Eggs story</td><td class="wrap">A World of Eggs</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear A World of Eggs from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play A Story for the Brave story</td><td class="wrap">A Story for the Brave</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear A Story for the Brave from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play The Ocean's Waves story</td><td class="wrap">The Ocean's Waves</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear The Ocean's Waves from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Lost Mommy story</td><td class="wrap">Lost Mommy</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Lost Mommy from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Zebra Colors story</td><td class="wrap">Zebra Colors</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Zebra Colors from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play The Jungle Story story</td><td class="wrap">The Jungle Story</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear The Jungle Story from Story Book</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Zola finds a Rainbow story</td><td class="wrap">Zola finds a Rainbow</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Zola finds a Rainbow from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Zola's Trip into Space story</td><td class="wrap">Zola's Trip into Space</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Zola's Trip into Space from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Lion and Mouse story</td><td class="wrap">Lion and Mouse</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Lion and Mouse from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Thirsty Crow story</td><td class="wrap">Thirsty Crow</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Thirsty Crow from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Boy Who Cried Wolf story</td><td class="wrap">Boy Who Cried Wolf</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Boy Who Cried Wolf from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Lion, Bear and Fox story</td><td class="wrap">Lion, Bear and Fox</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Lion, Bear and Fox from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Ant and Grasshopper story</td><td class="wrap">Ant and Grasshopper</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Ant and Grasshopper from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Dog and Bone story</td><td class="wrap">Dog and Bone</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Dog and Bone from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Fox and Crow story</td><td class="wrap">Fox and Crow</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Fox and Crow from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Fox and Grapes story</td><td class="wrap">Fox and Grapes</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Fox and Grapes from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Fox and Stork story</td><td class="wrap">Fox and Stork</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Fox and Stork from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Bear and Bees story</td><td class="wrap">Bear and Bees</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Bear and Bees from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Cat and Fox story</td><td class="wrap">Cat and Fox</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Cat and Fox from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Honest Woodcutter story</td><td class="wrap">Honest Woodcutter</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Honest Woodcutter from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Town and Country Mouse story</td><td class="wrap">Town and Country Mouse</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Town and Country Mouse from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Two Stubborn Goats story</td><td class="wrap">Two Stubborn Goats</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Two Stubborn Goats from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Fox and Goat story</td><td class="wrap">Fox and Goat</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Fox and Goat from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Wolf and House Dog story</td><td class="wrap">Wolf and House Dog</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Wolf and House Dog from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Three Little Pigs story</td><td class="wrap">Three Little Pigs</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Three Little Pigs from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Cindy and Magical Tree story</td><td class="wrap">Cindy and Magical Tree</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Cindy and Magical Tree from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Sun and Wind story</td><td class="wrap">Sun and Wind</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Sun and Wind from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Bear and Travelers story</td><td class="wrap">Bear and Travelers</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Bear and Travelers from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Midas and Golden Touch story</td><td class="wrap">Midas and Golden Touch</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Midas and Golden Touch from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Frog Prince story</td><td class="wrap">Frog Prince</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Frog Prince from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Giant Turnip story</td><td class="wrap">Giant Turnip</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Giant Turnip from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play A Princess for a Day story</td><td class="wrap">A Princess for a Day</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear A Princess for a Day from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Bundle of Sticks story</td><td class="wrap">Bundle of Sticks</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Bundle of Sticks from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Town and Country Mouse story</td><td class="wrap">Town and Country Mouse</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Town and Country Mouse from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Two Stubborn Goats story</td><td class="wrap">Two Stubborn Goats</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Two Stubborn Goats from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Fox and Goat story</td><td class="wrap">Fox and Goat</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Fox and Goat from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Wolf and House Dog story</td><td class="wrap">Wolf and House Dog</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Wolf and House Dog from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Three Little Pigs story</td><td class="wrap">Three Little Pigs</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Three Little Pigs from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Cindy and Magical Tree story</td><td class="wrap">Cindy and Magical Tree</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Cindy and Magical Tree from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Sun and Wind story</td><td class="wrap">Sun and Wind</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Sun and Wind from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Bear and Travelers story</td><td class="wrap">Bear and Travelers</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Bear and Travelers from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Midas and Golden Touch story</td><td class="wrap">Midas and Golden Touch</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Midas and Golden Touch from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Frog Prince story</td><td class="wrap">Frog Prince</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Frog Prince from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Giant Turnip story</td><td class="wrap">Giant Turnip</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Giant Turnip from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play A Princess for a Day story</td><td class="wrap">A Princess for a Day</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear A Princess for a Day from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Bundle of Sticks story</td><td class="wrap">Bundle of Sticks</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Bundle of Sticks from Kidloland Stories</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Roger the Reindeer story</td><td class="wrap">Roger the Reindeer</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Roger the Reindeer from Sweet Cherry Publishing</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Robin's London Trip story</td><td class="wrap">Robin's London Trip</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Robin's London Trip from Sweet Cherry Publishing</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Robin's Venice Trip story</td><td class="wrap">Robin's Venice Trip</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Robin's Venice Trip from Sweet Cherry Publishing</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Robin's Rio Trip story</td><td class="wrap">Robin's Rio Trip</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Robin's Rio Trip from Sweet Cherry Publishing</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Robin's Petersburg Trip story</td><td class="wrap">Robin's Petersburg Trip</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Robin's Petersburg Trip from Sweet Cherry Publishing</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Leon the Lion story</td><td class="wrap">Leon the Lion</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Leon the Lion from Sweet Cherry Publishing</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Gorilla and Snuffles story</td><td class="wrap">Gorilla and Snuffles</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Gorilla and Snuffles from Sweet Cherry Publishing</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Where Monsters Live story</td><td class="wrap">Where Monsters Live</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Where Monsters Live from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Moana story</td><td class="wrap">Moana</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Moana from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Quest For The Heart story</td><td class="wrap">Quest For The Heart</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Quest For The Heart from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play The Elsa's Gift story</td><td class="wrap">The Elsa's Gift</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear The Elsa's Gift from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Frozen story</td><td class="wrap">Frozen</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Frozen from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Anna &amp; Elsa's Childhood Times story</td><td class="wrap">Anna &amp; Elsa's Childhood Times</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Anna &amp; Elsa's Childhood Times from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play A Dazzling Day Mix story</td><td class="wrap">A Dazzling Day Mix</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear A Dazzling Day Mix from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Simba story</td><td class="wrap">Simba</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Simba from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Toy Story 3 story</td><td class="wrap">Toy Story 3</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Toy Story 3 from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Zootopia story</td><td class="wrap">Zootopia</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Zootopia from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play The Big Case story</td><td class="wrap">The Big Case</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear The Big Case from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Fight To The Finish story</td><td class="wrap">Fight To The Finish</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Fight To The Finish from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play UFM story</td><td class="wrap">UFM</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear UFM from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Cars story</td><td class="wrap">Cars</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Cars from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play COCO story</td><td class="wrap">COCO</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear COCO from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Miguel And The Amazing Alebrijes story</td><td class="wrap">Miguel And The Amazing Alebrijes</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Miguel And The Amazing Alebrijes from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Finding Dory story</td><td class="wrap">Finding Dory</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Finding Dory from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Snow White and Seven Dwarfs story</td><td class="wrap">Snow White and Seven Dwarfs</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Snow White and Seven Dwarfs from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Aladdin story</td><td class="wrap">Aladdin</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Aladdin from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Welcome To Headquarters story</td><td class="wrap">Welcome To Headquarters</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Welcome To Headquarters from Disney</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Hola Mariachi story</td><td class="wrap">Hola Mariachi</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Hola Mariachi from Lets go Luna</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play What’s the Big Idea? story</td><td class="wrap">What’s the Big Idea?</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear What’s the Big Idea? from Lets go Luna</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class="fail"><td class="wrap">Can you play Lullaby for Baby Vlad story</td><td class="wrap">Lullaby for Baby Vlad</td><td class="wrap">Ans--&gt;Sure
+Ans--&gt;Now playing Across the Universe from Lullaby Renditions of Beatles by Smart Baby on iHeart Radio</td><td>MIKO.IHEART.SPECIFIC</td><td>FAIL</td><td class="wrap">None of the expected phrases found: Lullaby for Baby Vlad</td></tr>
+<tr class=""><td class="wrap">Can you play You Froze My Shorts story</td><td class="wrap">You Froze My Shorts</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear You Froze My Shorts from Lets go Luna</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Bob the Plant story</td><td class="wrap">Bob the Plant</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Bob the Plant from Lets go Luna</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Big Dig story</td><td class="wrap">Big Dig</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Big Dig from Lets go Luna</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play She Is the Moon of Moons story</td><td class="wrap">She Is the Moon of Moons</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear She Is the Moon of Moons from Lets go Luna</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Hoopin’ Hopper story</td><td class="wrap">Hoopin’ Hopper</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Hoopin’ Hopper from Lets go Luna</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Speaking Wigglewalker story</td><td class="wrap">Speaking Wigglewalker</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Speaking Wigglewalker from Lets go Luna</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Queen for a Day story</td><td class="wrap">Queen for a Day</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Queen for a Day from Lets go Luna</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Are You Eating Something Red? story</td><td class="wrap">Are You Eating Something Red?</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Are You Eating Something Red? from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Harry Bear and Friends: Opposites story</td><td class="wrap">Harry Bear and Friends: Opposites</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Harry Bear and Friends: Opposites from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Be Big! Beatrice’s First Day of First Grade story</td><td class="wrap">Be Big! Beatrice’s First Day of First Grade</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Be Big! Beatrice’s First Day of First Grade from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Little Craig: Balloons and Cake story</td><td class="wrap">Little Craig: Balloons and Cake</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Little Craig: Balloons and Cake from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Buzzy’s Big Bedtime Book story</td><td class="wrap">Buzzy’s Big Bedtime Book</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Buzzy’s Big Bedtime Book from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Buzzy’s Boo-Boo story</td><td class="wrap">Buzzy’s Boo-Boo</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Buzzy’s Boo-Boo from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Fox and the Last Piece of Pie story</td><td class="wrap">Fox and the Last Piece of Pie</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Fox and the Last Piece of Pie from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Happy Day story</td><td class="wrap">Happy Day</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Happy Day from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play I Am story</td><td class="wrap">I Am</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear I Am from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play I Dig Bathtime story</td><td class="wrap">I Dig Bathtime</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear I Dig Bathtime from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play I Want to Be Big! story</td><td class="wrap">I Want to Be Big!</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear I Want to Be Big! from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play It’s Time to Say Goodnight! story</td><td class="wrap">It’s Time to Say Goodnight!</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear It’s Time to Say Goodnight! from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Let’s Be Friends story</td><td class="wrap">Let’s Be Friends</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Let’s Be Friends from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Nom Nom Shapes story</td><td class="wrap">Nom Nom Shapes</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Nom Nom Shapes from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class="fail"><td class="wrap">Can you play Simms Taback’s Dinosaurs story</td><td class="wrap">Simms Taback’s Dinosaurs</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;I think you might like Dumbo the flying elephant
+Ans--&gt;Do you want to hear it?</td><td></td><td>FAIL</td><td class="wrap">None of the expected phrases found: Simms Taback’s Dinosaurs</td></tr>
+<tr class=""><td class="wrap">Can you play Opposites in the Park story</td><td class="wrap">Opposites in the Park</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Opposites in the Park from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Pond Party – A Forest Friends Book story</td><td class="wrap">Pond Party – A Forest Friends Book</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Pond Party – A Forest Friends Book from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Puppy is Lost story</td><td class="wrap">Puppy is Lost</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Puppy is Lost from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class="fail"><td class="wrap">Can you play Simms Taback’s Safari Animals story</td><td class="wrap">Simms Taback’s Safari Animals</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let me get my Safari hat!
+Ans--&gt;There are some teeny tiny animals and some that are huge! Which animal is big, an elephant or a frog?</td><td>MIKO.STORYTELLING.STORY</td><td>FAIL</td><td class="wrap">None of the expected phrases found: Simms Taback’s Safari Animals</td></tr>
+<tr class=""><td class="wrap">Can you play Stop and Go story</td><td class="wrap">Stop and Go</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Stop and Go from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play The Best Seat story</td><td class="wrap">The Best Seat</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear The Best Seat from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play The Lion and the Beetle story</td><td class="wrap">The Lion and the Beetle</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear The Lion and the Beetle from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play The Little i Who Lost His Dot story</td><td class="wrap">The Little i Who Lost His Dot</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear The Little i Who Lost His Dot from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play The Mozzie with a Sharp Snozzie story</td><td class="wrap">The Mozzie with a Sharp Snozzie</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear The Mozzie with a Sharp Snozzie from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Under the Sea 1, 2, 3 story</td><td class="wrap">Under the Sea 1, 2, 3</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Under the Sea 1, 2, 3 from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Unicorn and Horse story</td><td class="wrap">Unicorn and Horse</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Unicorn (and Horse) from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Waffles In The Sand story</td><td class="wrap">Waffles In The Sand</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Waffles In The Sand from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Buzzy’s Balloon story</td><td class="wrap">Buzzy’s Balloon</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Buzzy’s Balloon from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Landon Rides the Subway story</td><td class="wrap">Landon Rides the Subway</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Landon Rides the Subway from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Goldilocks story</td><td class="wrap">Goldilocks</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let's hear Goldilocks from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Shopping with Daddy story</td><td class="wrap">Shopping with Daddy</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Shopping with Daddy from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you play Stay Wild My Child story</td><td class="wrap">Stay Wild My Child</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let's hear Stay Wild My Child from Vooks</td><td>MIKO.STORYTELLING.STORY</td><td>PASS</td><td class="wrap"></td></tr>
+</table>
+</body>
+</html>
