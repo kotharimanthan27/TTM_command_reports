@@ -12,14 +12,20 @@ def get_sort_key(base_name):
     return base_name
 
 
-def parse_metadata(base_name):
-    lower = base_name.lower()
-    if 'rhymes' in lower:
+def parse_metadata(base_name, folder=""):
+    combined = f"{folder} {base_name}".lower()
+    if 'rhymes' in combined:
         category = 'Rhymes'
         badge_class = 'badge-rhymes'
-    elif 'mini' in lower:
+    elif 'mini' in combined:
         category = 'Mini'
         badge_class = 'badge-mini'
+    elif 'miko3' in combined or 'miko 3' in combined:
+        category = 'Miko3'
+        badge_class = 'badge-miko3'
+    elif 'sparky' in combined:
+        category = 'Sparky'
+        badge_class = 'badge-sparky'
     else:
         category = 'General'
         badge_class = 'badge-general'
@@ -38,58 +44,90 @@ def parse_metadata(base_name):
 def generate_index():
     groups = defaultdict(dict)
     all_files = []
+    skip_dirs = {'.git', '.github', '.kilo', '__pycache__', '.pytest_cache'}
 
-    for entry in os.listdir('.'):
-        if not os.path.isfile(entry) or entry.startswith('.') or entry.lower() == 'index.html':
-            continue
-        lower = entry.lower()
-        if lower.endswith('.html') and entry != 'test_generate_index.py':
-            base = entry[:-5]
-            groups[base]['html'] = entry
-            all_files.append(entry)
-        elif lower.endswith('.xlsx'):
-            base = entry[:-5]
-            groups[base]['xlsx'] = entry
-            all_files.append(entry)
-        elif lower.endswith('.log'):
-            base = entry[:-4]
-            groups[base]['log'] = entry
-            all_files.append(entry)
+    for root, dirs, files in os.walk('.'):
+        dirs[:] = [d for d in dirs if not d.startswith('.') and d not in skip_dirs]
 
-    sorted_groups = sorted(groups.items(), key=lambda x: get_sort_key(x[0]), reverse=True)
+        rel_dir = os.path.relpath(root, '.')
+        folder_clean = '' if rel_dir == '.' else rel_dir.replace('\\', '/')
+
+        for entry in files:
+            if entry.startswith('.') or entry.lower() == 'index.html' or entry == 'test_generate_index.py':
+                continue
+
+            lower = entry.lower()
+            rel_path = os.path.normpath(os.path.join(rel_dir, entry)) if rel_dir != '.' else entry
+            web_path = rel_path.replace('\\', '/')
+
+            if lower.endswith('.html'):
+                base = entry[:-5]
+                ext = 'html'
+            elif lower.endswith('.xlsx'):
+                base = entry[:-5]
+                ext = 'xlsx'
+            elif lower.endswith('.log'):
+                base = entry[:-4]
+                ext = 'log'
+            else:
+                continue
+
+            group_key = f"{folder_clean}/{base}" if folder_clean else base
+            if 'base' not in groups[group_key]:
+                groups[group_key]['base'] = base
+                groups[group_key]['folder'] = folder_clean
+
+            groups[group_key][ext] = web_path
+            all_files.append(web_path)
+
+    sorted_groups = sorted(
+        groups.values(),
+        key=lambda item: get_sort_key(item.get('base', '')),
+        reverse=True
+    )
 
     categories = set()
     cards_html = ""
 
-    for base, files in sorted_groups:
-        category, badge_class, formatted_date = parse_metadata(base)
+    for item in sorted_groups:
+        base = item['base']
+        folder = item.get('folder', '')
+        category, badge_class, formatted_date = parse_metadata(base, folder)
         categories.add(category)
-        search_query = base.lower()
+        search_query = f"{base} {folder} {category}".lower()
 
         # HTML action
-        if 'html' in files:
-            html_href = quote(files['html'])
+        if 'html' in item:
+            html_href = quote(item['html'])
             html_btn = f'<a href="{html_href}" class="btn btn-html" target="_blank">HTML Report</a>'
         else:
             html_btn = '<span class="btn btn-disabled">No HTML</span>'
 
         # Excel action
-        if 'xlsx' in files:
-            xlsx_href = quote(files['xlsx'])
+        if 'xlsx' in item:
+            xlsx_href = quote(item['xlsx'])
             excel_btn = f'<a href="{xlsx_href}" class="btn btn-excel" download>Excel Workbook</a>'
         else:
             excel_btn = '<span class="btn btn-disabled">No Excel</span>'
 
         # Log action
-        if 'log' in files:
-            log_href = quote(files['log'])
+        if 'log' in item:
+            log_href = quote(item['log'])
             log_btn = f'<a href="{log_href}" class="btn btn-log" target="_blank">View Log</a>'
         else:
             log_btn = '<span class="btn btn-disabled">No Log</span>'
 
+        folder_badge = ""
+        if folder:
+            display_folder = folder.replace('/', ' &bull; ')
+            folder_badge = f'<span class="badge badge-folder">{display_folder}</span>'
+
         cards_html += f"""        <div class="report-card" data-category="{category}" data-search="{search_query}">
           <div class="card-header">
-            <span class="badge {badge_class}">{category}</span>
+            <div class="badges-wrapper">
+              <span class="badge {badge_class}">{category}</span>
+              {folder_badge}
+            </div>
             <span class="report-date">{formatted_date}</span>
           </div>
           <h3 class="report-name">{base}</h3>
@@ -265,6 +303,13 @@ def generate_index():
         margin-bottom: 16px;
       }}
 
+      .badges-wrapper {{
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        flex-wrap: wrap;
+      }}
+
       .badge {{
         font-size: 11px;
         font-weight: 700;
@@ -284,9 +329,24 @@ def generate_index():
         color: #065f46;
       }}
 
+      .badge-miko3 {{
+        background-color: #e0e7ff;
+        color: #3730a3;
+      }}
+
+      .badge-sparky {{
+        background-color: #ffedd5;
+        color: #9a3412;
+      }}
+
       .badge-general {{
         background-color: #f1f5f9;
         color: #334155;
+      }}
+
+      .badge-folder {{
+        background-color: #f3e8ff;
+        color: #6b21a8;
       }}
 
       .report-date {{

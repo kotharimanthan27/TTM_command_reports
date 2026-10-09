@@ -27,6 +27,30 @@ class GenerateIndexTest(unittest.TestCase):
             finally:
                 os.chdir(old_cwd)
 
+    def test_nested_folders_reports(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            old_cwd = os.getcwd()
+            try:
+                os.chdir(temp_dir)
+                prod_mini_dir = os.path.join('Prod', 'Mini')
+                os.makedirs(prod_mini_dir)
+                with open(os.path.join(prod_mini_dir, 'sample mini.html'), 'w', encoding='utf-8') as f:
+                    f.write('ok')
+                with open(os.path.join(prod_mini_dir, 'sample mini.xlsx'), 'w', encoding='utf-8') as f:
+                    f.write('ok')
+
+                generate_index()
+
+                with open('index.html', 'r', encoding='utf-8') as f:
+                    content = f.read()
+
+                self.assertIn('href="Prod/Mini/sample%20mini.html"', content)
+                self.assertIn('href="Prod/Mini/sample%20mini.xlsx"', content)
+                self.assertIn('Prod &bull; Mini', content)
+                self.assertIn('Mini', content)
+            finally:
+                os.chdir(old_cwd)
+
 
 if __name__ == '__main__':
     unittest.main()
