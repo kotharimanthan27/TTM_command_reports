@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>QA Validation Report - M3B0237EB</title>
+<style>
+body{font-family:Arial,sans-serif;margin:24px;color:#222;}
+h1{font-size:20px;} h2{font-size:16px;margin-top:32px;}
+.summary{margin-bottom:16px;}
+.summary span{display:inline-block;padding:4px 10px;border-radius:4px;margin-right:8px;font-weight:bold;}
+.pass-badge{background:#d4edda;color:#155724;}
+.fail-badge{background:#f8d7da;color:#721c24;}
+.na-badge{background:#e2e3e5;color:#383d41;}
+table{border-collapse:collapse;width:100%;margin-bottom:24px;}
+th,td{border:1px solid #ccc;padding:6px 8px;text-align:left;vertical-align:top;font-size:13px;}
+th{background:#f2f2f2;}
+td.wrap{max-width:360px;white-space:pre-wrap;word-break:break-word;}
+tr.fail{background:#fdecea;}
+tr.na{background:#f5f5f5;}
+</style>
+</head>
+<body>
+<h1>QA Validation Report</h1>
+<div class="summary">Environment: <b>prod</b> | Bot: <b>M3B0237EB</b> | Skill: <b>0</b> | Login: <b>yes (product 1)</b> | Generated: <b>2026-10-09 18:23:06.093</b><br><br><span class="pass-badge">Passed: 48</span><span class="fail-badge">Failed: 1</span><span class="na-badge">N/A: 0</span><span>Total: 49</span></div>
+<h2>Basic command - mini</h2>
+<table>
+<tr><th>Question</th><th>Expected Word</th><th>Actual Output</th><th>Intent</th><th>Result</th><th>Failure Reason</th></tr>
+<tr class=""><td class="wrap">Can you tell me a tongue twister?</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;If two witches were watching two watches, which witch would watch which watch?
+Ans--&gt;Let's do it again!
+Ans--&gt;If two witches were watching two watches, which witch would watch which watch?
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Tell me a tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Betty's big bunny bobbled by the blueberry bush.
+Ans--&gt;Let's do it again!
+Ans--&gt;Betty's big bunny bobbled by the blueberry bush.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Say a tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Peter Piper picked a peck of pickled peppers. How many pickled peppers did Peter Piper pick?
+Ans--&gt;Let's do it again!
+Ans--&gt;Peter Piper picked a peck of pickled peppers. How many pickled peppers did Peter Piper pick?
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Give me a tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Seven slick slimey snakes slowly sliding southward.
+Ans--&gt;Let's do it again!
+Ans--&gt;Seven slick slimey snakes slowly sliding southward.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">I'd like to hear a tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;The great Greek grape growers grow great Greek grapes.
+Ans--&gt;Let's do it again!
+Ans--&gt;The great Greek grape growers grow great Greek grapes.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Share a tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Chester Cheetah chews a chunk of cheap cheddar cheese.
+Ans--&gt;Let's do it again!
+Ans--&gt;Chester Cheetah chews a chunk of cheap cheddar cheese.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Recite a tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;There was a minimum of cinnamon in the aluminium pan.
+Ans--&gt;Let's do it again!
+Ans--&gt;There was a minimum of cinnamon in the aluminium pan.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Read me a tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;How many snacks could a snack stacker stack, if a snack stacker snacked stacked snacks?
+Ans--&gt;Let's do it again!
+Ans--&gt;How many snacks could a snack stacker stack, if a snack stacker snacked stacked snacks?
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Speak a tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;He threw three free throws.
+Ans--&gt;Let's do it again!
+Ans--&gt;He threw three free throws.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Tell me one tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Upper roller lower roller, Upper roller lower roller.
+Ans--&gt;Let's do it again!
+Ans--&gt;Upper roller lower roller, Upper roller lower roller.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Do you know any tongue twisters?</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Kindly Kittens Knitted Mittens In The King’s Kitchen
+Ans--&gt;Let's do it again!
+Ans--&gt;Kindly Kittens Knitted Mittens In The King’s Kitchen
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you share a tongue twister with me?</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Singing Sammy sung songs on sinking sand.
+Ans--&gt;Let's do it again!
+Ans--&gt;Singing Sammy sung songs on sinking sand.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">I want to hear a tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;The 33 thieves thought that they thrilled the throne throughout Thursday.
+Ans--&gt;Let's do it again!
+Ans--&gt;The 33 thieves thought that they thrilled the throne throughout Thursday.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can I hear a tongue twister?</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;I wish to wash my Irish wristwatch.
+Ans--&gt;Let's do it again!
+Ans--&gt;I wish to wash my Irish wristwatch.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class="fail"><td class="wrap">Give me something tricky to say.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;That's a tricky topic, and different people see it differently. It's best to talk to a grown-up you trust.</td><td>MIKO.INTENT.OTHERS</td><td>FAIL</td><td class="wrap">None of the expected phrases found: Let's, practice, this, one,Of, course</td></tr>
+<tr class=""><td class="wrap">Tell me a fun tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;When you write copy you have the right to copyright the copy you write.
+Ans--&gt;Let's do it again!
+Ans--&gt;When you write copy you have the right to copyright the copy you write.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you say a difficult tongue twister?</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;If two witches were watching two watches, which witch would watch which watch?
+Ans--&gt;Let's do it again!
+Ans--&gt;If two witches were watching two watches, which witch would watch which watch?
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Tell me a challenging tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;How many sheets could a sheet slitter slit if a sheet slitter could slit sheets?
+Ans--&gt;Let's do it again!
+Ans--&gt;How many sheets could a sheet slitter slit if a sheet slitter could slit sheets?
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Give me a tongue twister to practice.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Sounding by sound is a sound method of sounding sounds.
+Ans--&gt;Let's do it again!
+Ans--&gt;Sounding by sound is a sound method of sounding sounds.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Do you have any tongue twisters?</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Stick strictly six stick stumps.
+Ans--&gt;Let's do it again!
+Ans--&gt;Stick strictly six stick stumps.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Tell me a funny tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Quick queens quack quick quacks quicker than quacking quails.
+Ans--&gt;Let's do it again!
+Ans--&gt;Quick queens quack quick quacks quicker than quacking quails.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you teach me a tongue twister?</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Fred fed Ted bread and Ted fed Fred bread.
+Ans--&gt;Let's do it again!
+Ans--&gt;Fred fed Ted bread and Ted fed Fred bread.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Let's hear a tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;She sold six shabby sheared sheep on ship.
+Ans--&gt;Let's do it again!
+Ans--&gt;She sold six shabby sheared sheep on ship.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Give me a silly tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;The boot black brought the black boot back.
+Ans--&gt;Let's do it again!
+Ans--&gt;The boot black brought the black boot back.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Tell me a cool tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;I slit the sheet, the sheet I slit, and on the slitted sheet I sit.
+Ans--&gt;Let's do it again!
+Ans--&gt;I slit the sheet, the sheet I slit, and on the slitted sheet I sit.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">I want a fun tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;A big black bug bit a big black bear.
+Ans--&gt;Let's do it again!
+Ans--&gt;A big black bug bit a big black bear.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you tell me a short tongue twister?</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Fresh French fried fly fritters.
+Ans--&gt;Let's do it again!
+Ans--&gt;Fresh French fried fly fritters.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Tell me an easy tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Let's practice this one.
+Ans--&gt;A..proper..copper..coffee..pot
+Ans--&gt;A proper copper coffee pot. A proper copper coffee pot
+Ans--&gt;Let's do it again!
+Ans--&gt;A proper copper coffee pot. A proper copper coffee pot. A proper copper coffee pot
+Ans--&gt;I think I nailed this one.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Say something hard to pronounce.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;That's a tough one! How about &quot;squirrel&quot;? It can be tricky to say!</td><td>MIKO.INTENT.OTHERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Give me a tongue twister game.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Lily ladles little Letty's lentil soup.
+Ans--&gt;Let's do it again!
+Ans--&gt;Lily ladles little Letty's lentil soup.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">What's a good tongue twister?</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Six shimmering sharks sharply striking shins.
+Ans--&gt;Let's do it again!
+Ans--&gt;Six shimmering sharks sharply striking shins.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Do you have a tongue twister for me?</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Twelve twins twirled twelve twigs.
+Ans--&gt;Let's do it again!
+Ans--&gt;Twelve twins twirled twelve twigs.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you give me a tongue twister challenge?</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Each Easter Eddie eats eighty Easter eggs.
+Ans--&gt;Let's do it again!
+Ans--&gt;Each Easter Eddie eats eighty Easter eggs.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Know any tongue twisters?</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Tom threw Tim three thumbtacks
+Ans--&gt;Let's do it again!
+Ans--&gt;Tom threw Tim three thumbtacks
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">What tongue twister can you tell me?</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Wayne went to Wales to watch walruses.
+Ans--&gt;Let's do it again!
+Ans--&gt;Wayne went to Wales to watch walruses.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Could you share a tongue twister?</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Which wristwatches are Swiss wristwatches?
+Ans--&gt;Let's do it again!
+Ans--&gt;Which wristwatches are Swiss wristwatches?
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Would you tell me a tongue twister?</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;The sixth sick sheik's sixth sheep's sick.
+Ans--&gt;Let's do it again!
+Ans--&gt;The sixth sick sheik's sixth sheep's sick.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Can you recite a tongue twister for me?</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Freshly fried flying fish, freshly fried flesh.
+Ans--&gt;Let's do it again!
+Ans--&gt;Freshly fried flying fish, freshly fried flesh.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Have you got any tongue twisters?</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Sam's shop stocks short spotted socks.
+Ans--&gt;Let's do it again!
+Ans--&gt;Sam's shop stocks short spotted socks.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">What's your favorite tongue twister?</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Four fine fresh fish for you.
+Ans--&gt;Let's do it again!
+Ans--&gt;Four fine fresh fish for you.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Play a tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;The blue bluebird blinks.
+Ans--&gt;Let's do it again!
+Ans--&gt;The blue bluebird blinks.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Start a tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Friendly fleas and fireflies.
+Ans--&gt;Let's do it again!
+Ans--&gt;Friendly fleas and fireflies.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Kitty caught the kitten in the kitchen.
+Ans--&gt;Let's do it again!
+Ans--&gt;Kitty caught the kitten in the kitchen.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Give me a tongue twister challenge.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Zebras zig and zebras zag.
+Ans--&gt;Let's do it again!
+Ans--&gt;Zebras zig and zebras zag.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Read out a tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;She should shun the shining sun.
+Ans--&gt;Let's do it again!
+Ans--&gt;She should shun the shining sun.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Tell me a random tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Double bubble gum, bubbles double.
+Ans--&gt;Let's do it again!
+Ans--&gt;Double bubble gum, bubbles double.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Say a tongue twister for me.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;A box of mixed biscuits, a mixed biscuit box.
+Ans--&gt;Let's do it again!
+Ans--&gt;A box of mixed biscuits, a mixed biscuit box.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Give me today's tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Penny’s pretty pink piggy bank
+Ans--&gt;Let's do it again!
+Ans--&gt;Penny’s pretty pink piggy bank
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Let's do a tongue twister.</td><td class="wrap">Let's, practice, this, one,Of, course</td><td class="wrap">Ans--&gt;Of course!
+Ans--&gt;Didn't you know, I'm a master at tongue twisters!
+Ans--&gt;Let's start with this one.
+Ans--&gt;Billy Button bought a buttered biscuit.
+Ans--&gt;Let's do it again!
+Ans--&gt;Billy Button bought a buttered biscuit.
+Ans--&gt;You can try this again anytime.</td><td>MIKO.INTENT.TONGUE_TWISTERS</td><td>PASS</td><td class="wrap"></td></tr>
+</table>
+</body>
+</html>
