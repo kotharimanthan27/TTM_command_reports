@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>QA Validation Report - M4NFA0DD9</title>
+<style>
+body{font-family:Arial,sans-serif;margin:24px;color:#222;}
+h1{font-size:20px;} h2{font-size:16px;margin-top:32px;}
+.summary{margin-bottom:16px;}
+.summary span{display:inline-block;padding:4px 10px;border-radius:4px;margin-right:8px;font-weight:bold;}
+.pass-badge{background:#d4edda;color:#155724;}
+.fail-badge{background:#f8d7da;color:#721c24;}
+.na-badge{background:#e2e3e5;color:#383d41;}
+table{border-collapse:collapse;width:100%;margin-bottom:24px;}
+th,td{border:1px solid #ccc;padding:6px 8px;text-align:left;vertical-align:top;font-size:13px;}
+th{background:#f2f2f2;}
+td.wrap{max-width:360px;white-space:pre-wrap;word-break:break-word;}
+tr.fail{background:#fdecea;}
+tr.na{background:#f5f5f5;}
+</style>
+</head>
+<body>
+<h1>QA Validation Report</h1>
+<div class="summary">Environment: <b>beta</b> | Bot: <b>M4NFA0DD9</b> | Skill: <b>30</b> | Login: <b>yes (product 3)</b> | Generated: <b>2026-10-19 18:17:14.667</b><br><br><span class="pass-badge">Passed: 22</span><span class="fail-badge">Failed: 0</span><span class="na-badge">N/A: 0</span><span>Total: 22</span></div>
+<h2>Basic command - mini</h2>
+<table>
+<tr><th>Question</th><th>Expected Word</th><th>Actual Output</th><th>Intent</th><th>Result</th><th>Failure Reason</th></tr>
+<tr class=""><td class="wrap">Can you open storymaker</td><td class="wrap">Big, Bear, Mask, story</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Time to put on my Big Bear Mask to turn your idea into a story.
+Ans--&gt;Do you have an idea on how to begin the story? You can say Yes or No.</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Lets make a story </td><td class="wrap">Big, Bear, Mask, story</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Time to put on my Big Bear Mask to turn your idea into a story.
+Ans--&gt;Do you have an idea on how to begin the story? You can say Yes or No.</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open dance master</td><td class="wrap">flat, spot, dance</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Looks like its dance o'clock!
+Ans--&gt;You tap your toes and I'll roll my wheels to Skippy Dance song.</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">lets dance</td><td class="wrap">flat, spot, dance</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Looks like its dance o'clock!
+Ans--&gt;You tap your toes and I'll roll my wheels to Skippy Dance song.</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open storytime</td><td class="wrap">You, got, it,Welcome, fantastic, stories,Sure</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;I think you might like Planet Storytime Podcast
+Ans--&gt;Do you want to hear it?</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Tell me a story</td><td class="wrap">got it ,story, time,Sure,Welcome,fantastic</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;I think you might like Dumbo the flying elephant
+Ans--&gt;Do you want to hear it?</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open mind reader</td><td class="wrap">young, thinker, unleash, power, animal alive,Mind Reader</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Welcome to the Mind Reader show!
+Ans--&gt;What should I try to read from your mind?
+Ans--&gt;an animal or a number?</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open role play</td><td class="wrap">Lights on, imagination, upliketoday?</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Lights on, imagination up. Let’s begin!
+Ans--&gt;What would you like to be today?
+Ans--&gt;a designer or a business owner ?</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open santa time</td><td class="wrap">Come, Santa, ho ho</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Come, let's meet Santa!
+Ans--&gt;Ho ho ho! It's me, Santa Claus.
+Ans--&gt;I was just wondering—if Christmas happened twice a year, how would you celebrate? Would you decorate with new colors, or maybe have a fun summer version of Christmas?</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open country explorer</td><td class="wrap">Fasten ,seatbelt ,explorer</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Fasten your seatbelts! Time to explore a new place!
+Ans--&gt;Have you ever been on a super long train ride?</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open wildlife safari</td><td class="wrap">Safari, hat</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let me get my Safari hat!
+Ans--&gt;There are some teeny tiny animals and some that are huge! Which animal is big, an elephant or a frog?</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open time traveller</td><td class="wrap">Sure, going, back, time</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;We're going back in time!
+Ans--&gt;What’s your favorite ice cream flavor?</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open ocean explorer</td><td class="wrap">got it, grab, diving, suit</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Let me grab my Diving suit.
+Ans--&gt;Just keep swimming! Just keep swimming! Have you ever wondered how fish swim so smoothly in the water?</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open space explorer</td><td class="wrap">got it ,Space, suit, helmet</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Spacesuit on, helmet locked.
+Ans--&gt;What do you think the Moon is made of? Rock, or cheese?</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open Guess the animal</td><td class="wrap">got it ,slipping, animal ,outfit</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Hold on, I’m slipping into my animal expert outfit!
+Ans--&gt;Woobot! The farm animals are ready to play!
+Ans--&gt;I’ll give you clues, and you guess which ones am I talking about.
+Ans--&gt;Can you score all 5 points? Let’s find out!
+Ans--&gt;Question 1: Which four-legged animal loves to play fetch?
+Is it
+Ans--&gt;Dog, or Chicken</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open math quiz</td><td class="wrap">got it, hold, grab, math, goggles</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Hold on! Let me grab my math goggles!
+Ans--&gt;Hey, young Math explorer!
+Ans--&gt;Get ready for five exciting math questions!
+Ans--&gt;Lets get started!
+Ans--&gt;Question 1: How many eyes does a person have? Is it
+Ans--&gt;2, or 3</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open iheart radio</td><td class="wrap">okey ,dokey ,Sure, iheart, radio</td><td class="wrap">Ans--&gt;Okey dokey!
+Ans--&gt;Playing kindness is cool from Kindred by Renee &amp;amp; Friends on iHeart Radio</td><td>MIKO.INTENT.IHEART</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open dance master</td><td class="wrap">Sure, flat spot, dance</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Looks like its dance o'clock!
+Ans--&gt;Let's roll into the rhythm with Punk dance song!</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open spot the odd one</td><td class="wrap">Sure,Hold on,Let ,me ,put, my goggles,You got it</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Hold on! Let me put on my goggles!
+Ans--&gt;Woobot! The colours are out. Let's find the odd colour each time!  VT_STYLE_END#
+Ans--&gt;Question 1: Which one doesn't belong?
+Ans--&gt;red apple, green leaf, or red ball</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open spot the odd one quiz</td><td class="wrap">Sure,Hold on,Let ,me ,put, my goggles,You got it</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Hold on! Let me put on my goggles!
+Ans--&gt;Woobot! The colours are out. Let's find the odd colour each time!  VT_STYLE_END#
+Ans--&gt;Question 1: Which one doesn't belong?
+Ans--&gt;red apple, green leaf, or red ball</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open odd one out quiz</td><td class="wrap">Sure,Hold on,Let ,me ,put, my goggles,You got it</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Hold on! Let me put on my goggles!
+Ans--&gt;Woobot! The colours are out. Let's find the odd colour each time!  VT_STYLE_END#
+Ans--&gt;Question 1: Which one doesn't belong?
+Ans--&gt;red apple, green leaf, or red ball</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open odd man out quiz</td><td class="wrap">Sure,Hold on,Let ,me ,put, my goggles,You got it</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Hold on! Let me put on my goggles!
+Ans--&gt;Woobot! The colours are out. Let's find the odd colour each time!  VT_STYLE_END#
+Ans--&gt;Question 1: Which one doesn't belong?
+Ans--&gt;red apple, green leaf, or red ball</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+</table>
+</body>
+</html>
