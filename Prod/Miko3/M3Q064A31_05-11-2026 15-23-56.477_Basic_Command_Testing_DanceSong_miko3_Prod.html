@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>QA Validation Report - M3Q064A31</title>
+<style>
+body{font-family:Arial,sans-serif;margin:24px;color:#222;}
+h1{font-size:20px;} h2{font-size:16px;margin-top:32px;}
+.summary{margin-bottom:16px;}
+.summary span{display:inline-block;padding:4px 10px;border-radius:4px;margin-right:8px;font-weight:bold;}
+.pass-badge{background:#d4edda;color:#155724;}
+.fail-badge{background:#f8d7da;color:#721c24;}
+.na-badge{background:#e2e3e5;color:#383d41;}
+table{border-collapse:collapse;width:100%;margin-bottom:24px;}
+th,td{border:1px solid #ccc;padding:6px 8px;text-align:left;vertical-align:top;font-size:13px;}
+th{background:#f2f2f2;}
+td.wrap{max-width:360px;white-space:pre-wrap;word-break:break-word;}
+tr.fail{background:#fdecea;}
+tr.na{background:#f5f5f5;}
+</style>
+</head>
+<body>
+<h1>QA Validation Report</h1>
+<div class="summary">Environment: <b>prod</b> | Bot: <b>M3Q064A31</b> | Skill: <b>0</b> | Login: <b>yes (product 1)</b> | Generated: <b>2026-11-05 15:23:56.507</b><br><br><span class="pass-badge">Passed: 0</span><span class="fail-badge">Failed: 14</span><span class="na-badge">N/A: 3</span><span>Total: 17</span></div>
+<h2>Basic command - mini</h2>
+<table>
+<tr><th>Question</th><th>Expected Word</th><th>Actual Output</th><th>Intent</th><th>Result</th><th>Failure Reason</th></tr>
+<tr class="fail"><td class="wrap">Can you dance on Pan cake song</td><td class="wrap">Pan cake song</td><td class="wrap"></td><td>MIKO.INTENT.DANCE</td><td>FAIL</td><td class="wrap">Exception: java.lang.NullPointerException</td></tr>
+<tr class="fail"><td class="wrap">Can you dance on Happy Holidays Dance song</td><td class="wrap">Happy Holidays Dance song</td><td class="wrap"></td><td>MIKO.INTENT.DANCE</td><td>FAIL</td><td class="wrap">Exception: java.lang.NullPointerException</td></tr>
+<tr class="fail"><td class="wrap">Can you dance on banana Dance song</td><td class="wrap">banana Dance song</td><td class="wrap"></td><td>MIKO.INTENT.DANCE</td><td>FAIL</td><td class="wrap">Exception: java.lang.NullPointerException</td></tr>
+<tr class="fail"><td class="wrap">Can you dance on Monkey Dance song</td><td class="wrap">Monkey Dance song</td><td class="wrap"></td><td>MIKO.INTENT.DANCE</td><td>FAIL</td><td class="wrap">Exception: java.lang.NullPointerException</td></tr>
+<tr class="fail"><td class="wrap">Can you dance on DaDa Dance song</td><td class="wrap">DaDa Dance song</td><td class="wrap"></td><td>MIKO.INTENT.DANCE</td><td>FAIL</td><td class="wrap">Exception: java.lang.NullPointerException</td></tr>
+<tr class="fail"><td class="wrap">Can you dance on Tutting song</td><td class="wrap">Tutting dance song</td><td class="wrap"></td><td>MIKO.INTENT.DANCE</td><td>FAIL</td><td class="wrap">Exception: java.lang.NullPointerException</td></tr>
+<tr class="fail"><td class="wrap">Can you dance on Hallowen song</td><td class="wrap">Hallowen song</td><td class="wrap"></td><td>MIKO.INTENT.DANCE</td><td>FAIL</td><td class="wrap">Exception: java.lang.NullPointerException</td></tr>
+<tr class="fail"><td class="wrap">Can you dance on Boomber dance song</td><td class="wrap">Boomber dance song</td><td class="wrap"></td><td>MIKO.INTENT.DANCE</td><td>FAIL</td><td class="wrap">Exception: java.lang.NullPointerException</td></tr>
+<tr class="fail"><td class="wrap">Can you dance on Skippy dance song</td><td class="wrap">Skippy dance song</td><td class="wrap"></td><td>MIKO.INTENT.DANCE</td><td>FAIL</td><td class="wrap">Exception: java.lang.NullPointerException</td></tr>
+<tr class="fail"><td class="wrap">Can you dance on Punk dance song</td><td class="wrap">Punk dance song</td><td class="wrap"></td><td>MIKO.INTENT.DANCE</td><td>FAIL</td><td class="wrap">Exception: java.lang.NullPointerException</td></tr>
+<tr class="fail"><td class="wrap">Can you dance on Baby Shark Dance song</td><td class="wrap">Baby Shark Dance song</td><td class="wrap"></td><td>MIKO.INTENT.DANCE</td><td>FAIL</td><td class="wrap">Exception: java.lang.NullPointerException</td></tr>
+<tr class="fail"><td class="wrap">Can you dance on Put your Hands up Dance song</td><td class="wrap">Put your Hands up Dance song</td><td class="wrap"></td><td>MIKO.INTENT.DANCE</td><td>FAIL</td><td class="wrap">Exception: java.lang.NullPointerException</td></tr>
+<tr class="fail"><td class="wrap">Can you dance on Apple and banana Dance song</td><td class="wrap">Apple and banana Dance song</td><td class="wrap"></td><td>MIKO.INTENT.DANCE</td><td>FAIL</td><td class="wrap">Exception: java.lang.NullPointerException</td></tr>
+<tr class="fail"><td class="wrap">Can you dance on Animal Dance song</td><td class="wrap">Animal Dance song</td><td class="wrap"></td><td>MIKO.INTENT.DANCE</td><td>FAIL</td><td class="wrap">Exception: java.lang.NullPointerException</td></tr>
+<tr class="na"><td class="wrap">Lets dance</td><td class="wrap"></td><td class="wrap"></td><td>MIKO.INTENT.DANCE</td><td>N/A</td><td class="wrap"></td></tr>
+<tr class="na"><td class="wrap">Open dance master</td><td class="wrap"></td><td class="wrap">Ans--&gt;Awesome choice!
+Ans--&gt;Get ready for fun!</td><td>MIKO.INTENT.LAUNCH_APP</td><td>N/A</td><td class="wrap"></td></tr>
+<tr class="na"><td class="wrap">Can we dance </td><td class="wrap"></td><td class="wrap"></td><td>MIKO.INTENT.DANCE</td><td>N/A</td><td class="wrap"></td></tr>
+</table>
+</body>
+</html>
