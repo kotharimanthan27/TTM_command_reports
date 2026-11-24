@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>QA Validation Report - M4NFA0DDE</title>
+<style>
+body{font-family:Arial,sans-serif;margin:24px;color:#222;}
+h1{font-size:20px;} h2{font-size:16px;margin-top:32px;}
+.summary{margin-bottom:16px;}
+.summary span{display:inline-block;padding:4px 10px;border-radius:4px;margin-right:8px;font-weight:bold;}
+.pass-badge{background:#d4edda;color:#155724;}
+.fail-badge{background:#f8d7da;color:#721c24;}
+.na-badge{background:#e2e3e5;color:#383d41;}
+table{border-collapse:collapse;width:100%;margin-bottom:24px;}
+th,td{border:1px solid #ccc;padding:6px 8px;text-align:left;vertical-align:top;font-size:13px;}
+th{background:#f2f2f2;}
+td.wrap{max-width:360px;white-space:pre-wrap;word-break:break-word;}
+tr.fail{background:#fdecea;}
+tr.na{background:#f5f5f5;}
+</style>
+</head>
+<body>
+<h1>QA Validation Report</h1>
+<div class="summary">Environment: <b>beta</b> | Bot: <b>M4NFA0DDE</b> | Skill: <b>30</b> | Login: <b>yes (product 3)</b> | Generated: <b>2026-11-24 19:50:04.938</b><br><br><span class="pass-badge">Passed: 23</span><span class="fail-badge">Failed: 0</span><span class="na-badge">N/A: 0</span><span>Total: 23</span></div>
+<h2>Basic command - mini</h2>
+<table>
+<tr><th>Question</th><th>Expected Word</th><th>Actual Output</th><th>Intent</th><th>Result</th><th>Failure Reason</th></tr>
+<tr class=""><td class="wrap">Can you open storymaker</td><td class="wrap">Big, Bear, Mask, story ,Amazing, Awesome, Sure, ready , moment</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Time to put on my Big Bear Mask to turn your idea into a story.
+Ans--&gt;Do you have an idea on how to begin the story? You can say Yes or No.</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Lets create a wonderful story</td><td class="wrap">Big, Bear, Mask, story ,Amazing, Awesome, Sure, ready , moment</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Jim, Let’s create an interesting story together, imagine what happens next, build your characters, and bring all your ideas to life in your own unique way!
+Ans--&gt;Time to put on my Big Bear Mask to turn your idea into a story.
+Ans--&gt;Do you have an idea on how to begin the story? You can say Yes or No.</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Lets make a story </td><td class="wrap">Big, Bear, Mask, story ,Amazing, Awesome, Sure, ready , moment</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Time to put on my Big Bear Mask to turn your idea into a story.
+Ans--&gt;Do you have an idea on how to begin the story? You can say Yes or No.</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open dance master</td><td class="wrap">flat, spot, dance,Amazing, Awesome, Sure, ready , moment</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Looks like its dance o'clock!
+Ans--&gt;You tap your toes and I'll roll my wheels to Monkey Dance song.</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">lets dance</td><td class="wrap">flat, spot, dance,Amazing, Awesome, Sure, ready , moment</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Looks like its dance o'clock!
+Ans--&gt;You tap your toes and I'll roll my wheels to Boomer Dance song.</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open storytime</td><td class="wrap">You, got, it,Welcome, fantastic, stories,Sure,Amazing, Awesome, ready , moment</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;It's story time!
+Ans--&gt;Let's hear Baby's Family from Kidloland Stories
+Ans--&gt;That was great!
+Ans--&gt;Wanna listen to another one?</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Tell me a story</td><td class="wrap">got it ,story, time,Sure,Welcome,fantastic,Amazing, Awesome, ready , moment</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;It's story time!
+Ans--&gt;Let's hear Cindy's Dream from Kidloland Stories
+Ans--&gt;That was great!
+Ans--&gt;Wanna listen to another one?</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open mind reader</td><td class="wrap">young, thinker, unleash, power, animal alive,Mind Reader</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Welcome to the Mind Reader show!
+Ans--&gt;What should I try to read from your mind?
+Ans--&gt;an animal or a number?</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open role play</td><td class="wrap">Lights on, imagination, upliketoday, Amazing, Awesome, Sure, ready , moment</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Lights on, imagination up. Let’s begin!
+Ans--&gt;What would you like to be today?
+Ans--&gt;a superhero or a detective ?</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open santa time</td><td class="wrap">Come, Santa, ho ho,Amazing, Awesome, Sure, ready , moment</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Come, let's meet Santa!
+Ans--&gt;Ho ho ho! It's me, Santa Claus.
+Ans--&gt;Ho ho ho! At the North Pole, my elves make toys in a big workshop, and they need new ideas! If you could invent a brand-new toy, what would it be?</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open country explorer</td><td class="wrap">Fasten ,seatbelt ,explorer,Amazing, Awesome, Sure, ready , moment</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Fasten your seatbelts! Time to explore a new place!
+Ans--&gt;Let’s fly to Australia, a big country far away where kangaroos hop around! Have you ever seen a kangaroo in a book, a video, or at a zoo?</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open wildlife safari</td><td class="wrap">Safari, hat,Amazing, Awesome, Sure, ready , moment</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let me get my Safari hat!
+Ans--&gt;Monkeys are playful animals that live in forests and love to swing from tree to tree! Have you ever seen a monkey in a book, a video, at a zoo, or outside?</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open time traveller</td><td class="wrap">Sure, going, back, time,Amazing, Awesome, Sure, ready , moment</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;We're going back in time!
+Ans--&gt;Long, long ago, homes didn't have light bulbs or switches. How do you think people lit up their homes when it got dark</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open ocean explorer</td><td class="wrap">got it, grab, diving, suit,Amazing, Awesome, Sure, ready , moment</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Let me grab my Diving suit.
+Ans--&gt;Deep in the warm ocean, there are busy underwater cities called coral reefs! Have you ever seen a coral reef in a book or a video?</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open space explorer</td><td class="wrap">got it ,Space, suit, helmet,Amazing, Awesome, Sure, ready , moment</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Spacesuit on, helmet locked.
+Ans--&gt;As we zoom through space, we fly past a comet! A comet is a big ball of ice and dust with a long, glowing tail. Have you ever seen a comet in real life, or in a book or a video?</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open Guess the animal</td><td class="wrap">got it ,slipping, animal ,outfit,Amazing, Awesome, Sure, ready , moment</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Hold on, I’m slipping into my animal expert outfit!
+Ans--&gt;For each question,
+Ans--&gt;choose an answer from the given options!
+Ans--&gt;Woobot! There are so many animals to discover!
+Ans--&gt;I’ll give you clues, and you guess who they are.
+Ans--&gt;Earn points with every right guess—let’s play!
+Ans--&gt;Question 1: You can find this black and white striped animal, in the wild grasslands of Africa. Who is it?
+Ans--&gt;Giraffe, or Zebra</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open math quiz</td><td class="wrap">got it, hold, grab, math, goggles,Amazing, Awesome, Sure, ready , moment</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Hold on! Let me grab my math goggles!
+Ans--&gt;For each question,
+Ans--&gt;choose an answer from the given options!
+Ans--&gt;Hey, young Math explorer!
+Ans--&gt;Get ready for five exciting math questions!
+Ans--&gt;Lets get started!
+Ans--&gt;Question 1: Which number comes after 20? Is it
+Ans--&gt;11, or 21</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open iheart radio</td><td class="wrap">okey ,dokey ,Sure, iheart, radio,Amazing, Awesome, Sure, ready , moment</td><td class="wrap">Ans--&gt;Okey dokey!
+Ans--&gt;Playing Saint-Saëns: The Carnival of the Animals: IV. Tortoises from Itzhak Perlman - The Complete Warner Recordings 1980 - 2002 by Itzhak Perlman on iHeart Radio</td><td>MIKO.INTENT.IHEART</td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open dance master</td><td class="wrap">Sure, flat spot, dance,Amazing, Awesome, Sure, ready , moment</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Looks like its dance o'clock!
+Ans--&gt;You tap your toes and I'll roll my wheels to Skippy Dance song.</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open spot the odd one</td><td class="wrap">Sure,Hold on,Let ,me ,put, my goggles,You got ,Amazing, Awesome, Sure, ready , moment</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Hold on! Let me put on my goggles!
+Ans--&gt;For each question,
+Ans--&gt;spot the odd one out from the given options!
+Ans--&gt;Woobot! The animals are here.
+Ans--&gt;Get ready to spot the odd animal!
+Ans--&gt;Question 1: Which one stands out from the rest?
+Ans--&gt;rabbit, donkey, or shoe</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open spot the odd one quiz</td><td class="wrap">Sure,Hold on,Let ,me ,put, my goggles,You got ,Amazing, Awesome, Sure, ready , moment</td><td class="wrap">Ans--&gt;Sure!
+Ans--&gt;Hold on! Let me put on my goggles!
+Ans--&gt;Woobot! The animals are here.
+Ans--&gt;Get ready to spot the odd animal!
+Ans--&gt;Question 1: Which one stands out from the rest?
+Ans--&gt;rabbit, donkey, or shoe</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open odd one out quiz</td><td class="wrap">Sure,Hold on,Let ,me ,put, my goggles,You got ,Amazing, Awesome, Sure, ready , moment</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Hold on! Let me put on my goggles!
+Ans--&gt;Woobot! The animals are here.
+Ans--&gt;Get ready to spot the odd animal!
+Ans--&gt;Question 1: Which one stands out from the rest?
+Ans--&gt;rabbit, donkey, or shoe</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+<tr class=""><td class="wrap">Open odd man out quiz</td><td class="wrap">Sure,Hold on,Let ,me ,put, my goggles,You got ,Amazing, Awesome, Sure, ready , moment</td><td class="wrap">Ans--&gt;You got it!
+Ans--&gt;Hold on! Let me put on my goggles!
+Ans--&gt;Woobot! The animals are here.
+Ans--&gt;Get ready to spot the odd animal!
+Ans--&gt;Question 1: Which one stands out from the rest?
+Ans--&gt;rabbit, donkey, or shoe</td><td></td><td>PASS</td><td class="wrap"></td></tr>
+</table>
+</body>
+</html>
